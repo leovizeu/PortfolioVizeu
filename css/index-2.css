@@ -35,6 +35,11 @@ h2 {
     letter-spacing: 4px;
 }
 
+.about-me {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 .social-media {
     margin-top: 1rem;
     display: flex;
