@@ -35,6 +35,17 @@ h2 {
     letter-spacing: 4px;
 }
 
+h4 {
+    max-width: 600px;
+}
+
+h5 {
+    display: flex;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
 .about-me {
     align-items: flex-end;
     justify-content: flex-end;
@@ -61,7 +72,7 @@ a:hover {
     background-color: #93b7c3;
 }
 
-/* MENU HAMBUERGUER*/
+/* MENU HAMBURGUER*/
 
 .checkbox-container {
     justify-content: center;
@@ -115,7 +126,7 @@ a:hover {
     top: 28px;
     right: 30px;
     background-color: transparent;
-    height: 4px;
+    height: 50px;
     width: 10px;
     box-shadow: 900px 0px 900px 900px #ffffff;
     z-index: -1;
@@ -174,7 +185,7 @@ a:hover {
 }
 
 #toggle:checked ~ .menu{
-    box-shadow: 0px 0px 100px 60vmax #ffffff;
+    box-shadow: 0px 0px 100px 100vmax #ffffff;
     z-index: 1;
 }
 
@@ -294,6 +305,18 @@ a:hover {
         padding: 0;
         margin: 0;
         justify-content: left;
+    }
+
+    .menu {
+        position: absolute;
+        top: 28px;
+        right: 30px;
+        background-color: transparent;
+        height: 60px;
+        width: 10px;
+        box-shadow: 900px 0px 900px 900px #ffffff;
+        z-index: -1;
+        transition: 400ms ease-in-out 0s;
     }
 
     .social-media a {
