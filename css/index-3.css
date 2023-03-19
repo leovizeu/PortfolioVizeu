@@ -290,6 +290,11 @@ a:hover {
         justify-content: left;
     }
 
+    #toggle:checked ~ .menu{
+        box-shadow: 0px 0px 100px 100vmax #ffffff;
+        z-index: 1;
+    }
+
     .social-media a {
         padding: 0.2rem 0.5rem;
         min-width: 1rem;
