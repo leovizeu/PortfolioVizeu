@@ -245,7 +245,6 @@ a:hover {
 }
 
 .card-wrapper p {
-    font-size: 0;
     visibility: hidden;
     opacity: 0;
     font-weight: bold;
@@ -266,7 +265,6 @@ a:hover {
 .card:hover > .card-wrapper p {
     opacity: 1;
     visibility: visible;
-    font-size: 20px;
 }
 
 /*FOOTER*/
@@ -277,5 +275,106 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #c2c2da;
+    color: #6f6f80;
+}
+
+@media(max-width: 800px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: left;
+    }
+
+    .social-media a {
+        padding: 0.2rem 0.5rem;
+        min-width: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s ease-in-out;
+    }
+
+    h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .card {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        margin: 18rem 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .card-wrapper::before {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        display: block;
+        border: 1px solid #ffffff;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .card-wrapper h2 {
+        font-size: 16px;
+        letter-spacing: 3px;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .card-wrapper p {
+        font-size: 5px;
+    }
+    
+    .card:hover {
+        filter: unset;
+    }
+    
+    .card:hover > .card-wrapper::before {
+        height: 100px;
+        width: 100px;
+        opacity: 1;
+    }
+    
+    .card:hover > .card-wrapper p {
+        opacity: 1;
+        visibility: visible;
+        font-size: 12px;
+    }
 }

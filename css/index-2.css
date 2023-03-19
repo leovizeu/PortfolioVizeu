@@ -281,5 +281,43 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #c2c2da;
+    color: #6f6f80;
+}
+
+@media(max-width: 800px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: left;
+    }
+
+    .social-media a {
+        padding: 0.2rem 0.5rem;
+        min-width: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s ease-in-out;
+    }
+
+    h1 {
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    h2 {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
 }

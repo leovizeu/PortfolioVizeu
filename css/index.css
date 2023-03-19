@@ -291,7 +291,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #c2c2da;
+    color: #6f6f80;
 }
 
 @media(max-width: 800px) {
@@ -304,14 +304,10 @@ a:hover {
         padding: 0;
         margin: 0;
         justify-content: left;
-        
     }
 
     .social-media a {
-        text-decoration: none;
-        color:#00ffc8;
         padding: 0.2rem 0.5rem;
-        border: 1px solid #1E1E2A;
         min-width: 1rem;
         display: flex;
         align-items: center;
