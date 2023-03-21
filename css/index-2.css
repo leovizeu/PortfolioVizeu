@@ -41,9 +41,14 @@ h4 {
 
 h5 {
     display: flex;
-    text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 45px;
+}
+
+h6 {
+    display: flex;
+    letter-spacing: 4px;
+    font-size: 15px;
 }
 
 .about-me {
@@ -323,17 +328,38 @@ a:hover {
 
     h1 {
         font-size: 25px;
+        padding: 0.2rem 0.5rem;
         text-transform: uppercase;
         letter-spacing: 4px;
     }
     
     h2 {
         font-size: 13px;
+        padding: 0.2rem 0.5rem;
         text-transform: uppercase;
         letter-spacing: 4px;
     }
 
     h3 {
         font-size: 14px;
+        padding: 0.2rem 0.5rem;
+        max-width: 5rem;
+    }
+
+    h4 {
+        font-size: 14px;
+        padding: 0.2rem 0.5rem;
+        max-width: 20rem;
+    }
+
+    h5 {
+        font-size: 40px;
+        padding: 0.2rem 0.5rem;
+        max-width: 2rem;
+    }
+
+    h6 {
+        padding: 0.2rem 0.5rem;
+        max-width: 2rem;
     }
 }

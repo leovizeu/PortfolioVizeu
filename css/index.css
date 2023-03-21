@@ -322,17 +322,20 @@ a:hover {
 
     h1 {
         font-size: 25px;
+        padding: 0.2rem 0.5rem;
         text-transform: uppercase;
         letter-spacing: 4px;
     }
     
     h2 {
         font-size: 13px;
+        padding: 0.2rem 0.5rem;
         text-transform: uppercase;
         letter-spacing: 4px;
     }
 
     h3 {
+        padding: 0.2rem 0.5rem;
         font-size: 14px;
     }
 }
